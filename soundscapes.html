@@ -80,11 +80,50 @@
         <div id="title-sec">
             <div id="title">Soundscapes<br><em>Creative coding, Web Design</em></div>
             <div id="desc">Soundscapes is a web-based tool that allows the user to use hand motions to create interesting textured audio scapes with over 700,000 sounds from the <a href="https://www.freesound.org/" target="_blank">Freesound API.</a> The piece was featured as a performance at the PARSONS X IMPACT: SEAPORT SATELLITE | NYCxDesign Exhibition in May 2026. Visit <a href="https://madhumitau19.github.io/Soundscape/" target="_blank">here!</a></div>
-            <div id="tools"><em>Tools:</em><br>HTML/CSS/Javascript, Claude AI</div>
+            <div id="tools"><em>Tools:</em><br>HTML/CSS/Javascript, Claude AI, Google MediaPipe, Freesound API</div>
         </div>
 
         <div id="images">
-            
+            <div class="img-row">
+                <div class="img-container">
+                    <video src="Soundscapes/Demo-Vid-Intro.mp4" controls></video>
+                </div>
+            </div>
+            <div class="img-row" style="width: 65%; justify-self: center;">
+                <div class="img-container" style="width: 50%">
+                    <img src="Soundscapes/ref.png" class="img">
+                </div>
+                <div class="img-container" style="width: 50%">
+                    The tool uses vertical motion to control pitch and radius of the circle (based on spread of fingers or distance from camera) to control volume. The mechanics are inspired by a theremin, or hand-controlled audience choirs like Jacob Collier's famous concert act. Each hand controls a separate sound. You can record, layer and download you audioscape. 
+                </div>
+            </div>
+            <div class="img-row" style="width: 90%; justify-self: center;">
+                <div class="img-container" style="width: 50%;">
+                    <img src="Soundscapes/curatedsound.png" class="img" style="border-radius: 10px;">
+                </div>
+                <div class="img-container" style="width: 50%">
+                    <img src="Soundscapes/searchsounds.png" class="img" style="border-radius: 10px;">
+                </div>
+            </div>
+            <div class="img-row" style="width: 90%; justify-self: center;">
+                <div class="img-container" style="width: 50%">
+                    <img src="Soundscapes/record.png" class="img" style="border-radius: 10px;">
+                </div>
+                <div class="img-container" style="width: 50%">
+                    <img src="Soundscapes/tutorial.png" class="img" style="border-radius: 10px;">
+                </div>
+            </div>
+            <div class="img-row">
+                <div class="img-container">
+                    <img src="Soundscapes/mobible.png" class="img">
+                </div>
+            </div>
+            <div class="img-row" style="width: 40%; justify-self: center;">
+                <div class="img-container" style="display: block; color: var(--bg-black); font-style: italic; text-align: center;">
+                    <video src="Soundscapes/performance.mov" controls></video>
+                    Live performance with the tool
+                </div>
+            </div>
         </div>
         
         <script src="script.js" async defer></script>
