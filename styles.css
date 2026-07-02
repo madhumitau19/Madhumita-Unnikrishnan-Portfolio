@@ -330,7 +330,7 @@ i{
     #name{
         position: fixed;
         top: 35px;
-        left: 120px;
+        left: 90px;
         z-index: 3;
     }
     #name:hover{
@@ -345,7 +345,7 @@ i{
         padding-right: 20px;
         position: fixed;
         top: 35px;
-        left: 35px;
+        left: 20px;
     }
     .menu-item{
         transition: all 0.2s ease-in-out;
@@ -393,7 +393,7 @@ i{
     /* WIP BUTTON */
 
     #resume-btn{
-        margin-bottom: 10px;
+        margin-bottom: 8.5px;
     }
     #contact-ops{
         pointer-events: none;
@@ -425,17 +425,17 @@ i{
     }
 
    #content{
-        width: calc(100% - 70px);
+        width: calc(100% - 40px);
         z-index: 1;
         margin-left: 0px;
         padding-right: none;
     }
 
     #grid{
-        width: calc(100% - 70px);
+        width: calc(100% - 40px);
         height: 100dvh;
         z-index: 1;
-        left: 35px;
+        left: 20px;
         padding-right: 0;
         position: static;
         top: 0;
@@ -443,7 +443,7 @@ i{
         display: block;
         gap: 10px;
         overflow-y: scroll;
-        margin-left: 35px;
+        margin-left: 20px;
         
     }
 
@@ -512,9 +512,9 @@ i{
 
     #above-grad{
         position: fixed;
-        top: 70px;
-        left: 120px;
-        width: calc(100vw - 135px);
+        top: 60px;
+        left: 90px;
+        width: calc(100vw - 130px);
         z-index: 3; 
     }
     #intro{
