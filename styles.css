@@ -580,7 +580,8 @@ i{
         padding-left: 20px;
         margin-bottom: 10px;
         margin-top: 10px;
-        height: 100%;
+        height: fit-content;
+        padding-bottom: 0px;
     }
     .resume-list{
         padding-left: 40px;
