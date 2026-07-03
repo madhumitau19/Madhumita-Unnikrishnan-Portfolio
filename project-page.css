@@ -227,3 +227,217 @@ video{
 .img{
     width: 100%;
 }
+
+/* MOBILE */
+
+@media screen and (max-width: 800px){
+    :root {
+    --text: #030202;
+    --bg-black: #ece3e3;
+    --bg-color: #030202;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        all: unset;
+        transition: all 0.2s ease-in-out;
+    }
+    a:hover{
+        cursor: pointer;
+        opacity: 0.5;
+        filter: blur(0.75px);
+    }
+    ::selection{
+        background-color: rgb(210, 56, 159);
+        color: var(--bg-black)
+    }
+    #grid::-webkit-scrollbar{
+        display: none;
+    }
+
+    body{
+        padding: 20px;
+        /* display: flex; */
+        color: var(--text);
+        font-size: 13px; 
+        font-family: "loretta-variable",sans-serif;
+        font-variation-settings: 'wght' 300;
+        position: relative;
+        display: block;
+    }
+    #bg-img{
+        height: 100dvh;
+        width: 100dvw;
+        background: linear-gradient(180deg, var(--bg-black) 0%, var(--bg-color) 100%);
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 0;
+        left: 0;
+        
+    }
+    #gradient-top{
+        background: linear-gradient(180deg, rgb(230, 215, 208) 0%, rgba(255, 255, 255, 0) 50%);
+        z-index: 2;
+        position: fixed;
+        left: 0;
+        top: 35px;
+        height: calc(100dvh - 35px);
+        width: 100vw;
+        pointer-events: none;
+        display: none;
+    }
+
+    #nav{
+        width: calc(100dvw - 40px); 
+        position: fixed;
+        top: 35px;
+        left: 20px;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+    }
+    #name{
+        /* flex: 1; */
+    }
+    #resume-btn{
+        /* flex: 1; */
+        text-align: right;
+    }
+    #contact{
+        margin-right: 0px;
+    }
+
+    .menu-item{
+        transition: all 0.2s ease-in-out;
+        color: rgb(171, 171, 171);
+        width: fit-content;
+        text-decoration-color: rgb(171, 171, 171);
+    }
+    .menu-item:hover, #contact-ops a:hover{
+        /* filter: blur(10px); */
+        cursor: pointer;
+        opacity: 0.5;
+        filter: blur(0.75px);
+    }
+    #menu em{
+        text-decoration: underline;
+        font-style: normal;
+    }
+    #resume-btn{
+        margin-bottom: 28px;
+    }
+    #contact-ops{
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        flex-direction: column;
+        margin-bottom: 14px;
+        display: flex;
+        text-decoration: underline;
+    }
+    #contact-ops.show{
+        pointer-events: all;
+        opacity: 1;
+    }
+    #contact-ops a{
+        color: rgb(171, 171, 171);
+        transition: all 0.2s ease-in-out;
+        text-decoration-color: rgb(171, 171, 171);
+    }
+
+    #resume{
+        width: 100dvw;
+        left: 0;
+        padding: 20px;
+        padding-top: 35px;
+        overflow-y: auto;
+    }
+    #resume.show{
+        pointer-events:all;
+    }
+    #about{
+        width: 100%;
+        overflow-y: scroll;
+    }
+    #about-close{
+        cursor: pointer;
+    }
+    #resume-box{
+        width: 100%;
+        margin-top: 40px;
+        display: block;
+    }
+    .resume-box-section{
+        padding-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 100%;
+    }
+    .resume-list{
+        padding-left: 40px;
+    }
+
+    #title-sec{
+        /* width: calc(70dvw - 70px); */
+        width: 100%;
+        display: block;
+        gap: 35px;
+        /* position: fixed;
+        top: 84px;
+        left: 35px; */
+        z-index: 1;
+        margin-top: 84px;
+        position: relative;
+        /* position: sticky;
+        top: 84px; */
+    }
+    #title{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    #title em{
+        color: rgb(94, 94, 94);
+    }
+    #desc{
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    #desc a{
+        text-decoration:underline;
+    }
+    #tools{
+        width: 100%;
+    }
+
+    #images{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        margin-top: 35px;
+    }
+    .img-row{
+        width: 100%;
+        display: block;
+        gap: 14px;
+        margin-bottom: 14px;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-container{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 14px;
+    }
+    video{
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+    }
+}

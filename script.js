@@ -23,3 +23,15 @@ document.getElementById("resume").addEventListener("click", (e) => {
 document.body.addEventListener("click", ()=>{
     document.getElementById("resume").classList.remove("show");
 })
+
+function runOnlyOnMobile() {
+  if (window.matchMedia("(max-width: 800px)").matches) {
+    document.getElementById("about-close").addEventListener("click", (e)=>{
+        e.stopPropagation();
+        document.getElementById("resume").classList.remove("show");
+    });
+    console.log("This runs only on mobile-sized screens!");
+  }
+}
+
+runOnlyOnMobile();
