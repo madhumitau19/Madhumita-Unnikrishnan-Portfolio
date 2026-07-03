@@ -335,6 +335,7 @@ i{
 @media screen and (max-width: 1000px){
     body{
         padding: 0px;
+        font-size: 16px;
     }
     #name{
         position: fixed;

@@ -262,7 +262,7 @@ video{
         padding: 20px;
         /* display: flex; */
         color: var(--text);
-        font-size: 13px; 
+        font-size: 16px; 
         font-family: "loretta-variable",sans-serif;
         font-variation-settings: 'wght' 300;
         position: relative;
