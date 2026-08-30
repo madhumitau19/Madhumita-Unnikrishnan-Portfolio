@@ -97,9 +97,13 @@ body{
 }
 /* WIP BUTTON */
 
-#resume-btn{
+#more-work, #resume-btn{
     margin-bottom: 14px;
 }
+a{
+        all: unset;
+        transition: all 0.2s ease-in-out;
+    }
 #contact-ops{
     pointer-events: none;
     opacity: 0;
