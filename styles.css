@@ -282,6 +282,14 @@ a{
     width: 100%;
     height: 50vh;
 }
+#resume-download{
+    display: flex;
+    justify-content: space-between;
+}
+#pdf-download-btn{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
 em{
     font-style: italic;
 }
@@ -391,7 +399,7 @@ i{
         cursor: pointer;
         transition: all 0.3s ease;
     }
-    #wip:hover{
+    #wip:hover, #pdf-download-btn:hover{
         opacity: 0.5;
         filter: blur(0.75px);
     }
